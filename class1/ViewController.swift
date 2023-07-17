@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         crayon.alpha = 1.0
     }
     
-    
+    //animation for alpha decreasing
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
