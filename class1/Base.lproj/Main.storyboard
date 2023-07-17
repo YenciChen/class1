@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="class1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cranyon" translatesAutoresizingMaskIntoConstraints="NO" id="eg5-zr-88L">
+                                <rect key="frame" x="84.666666666666686" y="313.66666666666669" width="224" height="225.00000000000006"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="このご恩は忘れるまで忘れません" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKG-KC-Kq3">
+                                <rect key="frame" x="46.666666666666657" y="352" width="300" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RKG-KC-Kq3" secondAttribute="height" multiplier="327:161" id="sgT-jG-ige"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.87585034013605445" green="0.91982886904761907" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eg5-zr-88L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="59z-dg-TdW"/>
+                            <constraint firstItem="eg5-zr-88L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TTe-zC-lwR"/>
+                            <constraint firstItem="RKG-KC-Kq3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sLv-GF-8BX"/>
+                            <constraint firstItem="RKG-KC-Kq3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yAn-qD-kCu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="crayon" destination="eg5-zr-88L" id="kbO-Ab-6o6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23.664122137404579" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cranyon" width="224" height="225"/>
+    </resources>
+</document>
